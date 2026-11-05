@@ -1,0 +1,253 @@
+/* =====================================
+   MUSEO DIGITALE DEL TENENTE GALIMI
+   Stile ispirato agli anni Venti
+   ===================================== */
+
+:root {
+    --carta: #f3eddf;
+    --carta-chiara: #faf7ef;
+    --seppia: #554536;
+    --marrone: #79644e;
+    --bordeaux: #743d3b;
+    --verde: #59634b;
+    --bordo: #d2c4aa;
+}
+
+/* RESET GENERALE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO DELLA PAGINA */
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: var(--carta);
+    color: var(--seppia);
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* INTESTAZIONE */
+
+header {
+    background-color: var(--seppia);
+    color: var(--carta-chiara);
+    text-align: center;
+    padding: 45px 20px;
+    border-bottom: 5px solid var(--bordeaux);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #dfd2bc;
+    font-style: italic;
+}
+
+/* CONTENUTO PRINCIPALE */
+
+main {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: var(--carta-chiara);
+    border: 1px solid var(--bordo);
+    box-shadow: 0 4px 15px rgba(60, 45, 30, 0.08);
+}
+
+/* TITOLI */
+
+h2 {
+    color: var(--bordeaux);
+    font-size: 1.65rem;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--bordo);
+}
+
+h3 {
+    color: var(--verde);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* PARAGRAFI */
+
+p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* IMMAGINI */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid white;
+    outline: 1px solid var(--bordo);
+}
+
+/* VIDEO */
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 25px auto;
+    border: 4px solid white;
+}
+
+/* AUDIO */
+
+audio {
+    width: 100%;
+    margin: 15px 0;
+}
+
+/* LINK */
+
+a {
+    color: var(--bordeaux);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* PULSANTI */
+
+button {
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--seppia);
+}
+
+/* PIE' DI PAGINA */
+
+footer {
+    background-color: var(--seppia);
+    color: var(--carta);
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* ADATTAMENTO SMARTPHONE */
+
+@media (max-width: 650px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    iframe {
+        height: 240px;
+    }
+}
+/* =====================================
+   MENU DI NAVIGAZIONE
+   ===================================== */
+
+nav {
+    background-color: var(--verde);
+    border-bottom: 3px solid var(--bordeaux);
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--carta-chiara);
+    text-decoration: none;
+    padding: 15px 24px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--bordeaux);
+    color: white;
+}
+
+/* VOCE ATTIVA DEL MENU */
+
+nav ul li a.active {
+    background-color: var(--seppia);
+    color: white;
+}
+
+/* MENU SU SMARTPHONE */
+
+@media (max-width: 650px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    nav ul li a {
+        padding: 12px;
+    }
+}
