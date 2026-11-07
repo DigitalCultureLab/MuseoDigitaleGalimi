@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Il Tenente Galimi</title>
 
@@ -20,11 +20,11 @@
 <nav>
     <ul>
         <li>
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
         </li>
 
         <li>
-            <a href="galimi.html">Il Tenente Galimi</a>
+            <a href="galimi.html" class="active">Il Tenente Galimi</a>
         </li>
 
         <li>
@@ -52,38 +52,50 @@
 
     <h2>Guarda il video</h2>
 
-	<iframe>
-	    width="100%"
-	    height="360"
-	    src="https://www.youtube.com/embed/sOn30fkz8HA"
-	    title="Il Tenente Galimi"
-	    frameborder="0"
-	    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-	    referrerpolicy="strict-origin-when-cross-origin"
-	    allowfullscreen>
-</iframe>
-<iframe>
-			width="100%"
-	    height="360"
-			title="Modello 3D - Sketchfab"
-            src="https://sketchfab.com/models/bd37d31cbeb74cafa883f68509b04759/embed"
-            frameborder="0"
-            allow="autoplay; fullscreen; xr-spatial-tracking"
-            allowfullscreen>
-        </iframe>
+    <iframe
+        width="100%"
+        height="360"
+        src="https://www.youtube.com/embed/sOn30fkz8HA"
+        title="Il Tenente Galimi"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
 
-    </div>
+    <section class="modello-3d">
 
-    <p class="crediti-3d">
-        Modello 3D:
-        <a href="https://sketchfab.com/3d-models/3d-gun-model-evozon-game-studio-bd37d31cbeb74cafa883f68509b04759"
-           target="_blank" rel="noopener noreferrer">
-            3d Gun Model Evozon Game Studio
-        </a>
-        - Autore: Evozon Game Studio
-    </p>
+        <h2>Esplora il modello tridimensionale</h2>
 
-</section>
+        <p>
+            Osserva il modello 3D dell'arma.
+            Puoi ruotarlo, ingrandirlo e analizzarne
+            i particolari utilizzando il mouse o le dita.
+        </p>
+
+        <div class="sketchfab-container">
+
+            <iframe
+                title="Modello 3D - Sketchfab"
+                src="https://sketchfab.com/models/bd37d31cbeb74cafa883f68509b04759/embed"
+                frameborder="0"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <p class="crediti-3d">
+            Modello 3D:
+            <a href="https://sketchfab.com/3d-models/3d-gun-model-evozon-game-studio-bd37d31cbeb74cafa883f68509b04759"
+               target="_blank" rel="noopener noreferrer">
+                3d Gun Model Evozon Game Studio
+            </a>
+            - Autore: Evozon Game Studio
+        </p>
+
+    </section>
+
     <h2>Ascolta la narrazione</h2>
 
     <audio controls>
@@ -92,6 +104,10 @@
     </audio>
 
 </main>
+
+<footer>
+    <p>Museo Digitale Galimi - Campo Calabro</p>
+</footer>
 
 </body>
 </html>
