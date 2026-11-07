@@ -118,45 +118,6 @@ audio {
     margin: 15px 0;
 }
 
-/* MODELLI 3D SKETCHFAB */
-
-.modello-3d {
-    margin-top: 35px;
-    text-align: center;
-}
-
-.modello-3d h2 {
-    margin-bottom: 20px;
-}
-
-.modello-3d p {
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
-.sketchfab-container {
-    width: 100%;
-    max-width: 850px;
-    margin: 25px auto;
-}
-
-.sketchfab-container iframe {
-    display: block;
-    width: 100%;
-    height: 800px;
-    border: 1px solid var(--bordo);
-    border-radius: 5px;
-}
-
-.crediti-3d {
-    font-size: 13px;
-    color: var(--marrone);
-}
-
-.crediti-3d a {
-    color: var(--bordeaux);
-}
-
 /* LINK */
 
 a {
@@ -290,5 +251,41 @@ nav ul li a.active {
         padding: 12px;
     }
 }
+/* MODELLI 3D SKETCHFAB */
 
+.modello-3d {
+    margin-top: 35px;
+    text-align: center;
+}
 
+.modello-3d h2 {
+    margin-bottom: 20px;
+}
+
+.modello-3d p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.sketchfab-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 25px auto;
+}
+
+.sketchfab-container iframe {
+    display: block;
+    width: 100%;
+    height: 480px;
+    border: 1px solid var(--bordo);
+    border-radius: 5px;
+}
+
+.crediti-3d {
+    font-size: 13px;
+    color: var(--marrone);
+}
+
+.crediti-3d a {
+    color: var(--bordeaux);
+}
