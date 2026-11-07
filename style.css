@@ -1,7 +1,13 @@
-/* =====================================
+/* =====================================================
    MUSEO DIGITALE DEL TENENTE GALIMI
    Stile ispirato agli anni Venti
-   ===================================== */
+   ===================================================== */
+
+
+/* =====================================================
+   1. VARIABILI GRAFICHE
+   Definiscono la palette di colori del sito
+   ===================================================== */
 
 :root {
     --carta: #f3eddf;
@@ -13,7 +19,11 @@
     --bordo: #d2c4aa;
 }
 
-/* RESET GENERALE */
+
+/* =====================================================
+   2. RESET GENERALE
+   Elimina margini e padding predefiniti
+   ===================================================== */
 
 * {
     margin: 0;
@@ -21,7 +31,10 @@
     box-sizing: border-box;
 }
 
-/* CORPO DELLA PAGINA */
+
+/* =====================================================
+   3. STILE GENERALE DELLA PAGINA
+   ===================================================== */
 
 body {
     font-family: Georgia, "Times New Roman", serif;
@@ -31,7 +44,10 @@ body {
     font-size: 17px;
 }
 
-/* INTESTAZIONE */
+
+/* =====================================================
+   4. INTESTAZIONE DEL SITO
+   ===================================================== */
 
 header {
     background-color: var(--seppia);
@@ -54,140 +70,10 @@ header p {
     font-style: italic;
 }
 
-/* CONTENUTO PRINCIPALE */
 
-main {
-    max-width: 950px;
-    margin: 40px auto;
-    padding: 35px;
-    background-color: var(--carta-chiara);
-    border: 1px solid var(--bordo);
-    box-shadow: 0 4px 15px rgba(60, 45, 30, 0.08);
-}
-
-/* TITOLI */
-
-h2 {
-    color: var(--bordeaux);
-    font-size: 1.65rem;
-    font-weight: normal;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--bordo);
-}
-
-h3 {
-    color: var(--verde);
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-/* PARAGRAFI */
-
-p {
-    margin-bottom: 18px;
-    text-align: justify;
-}
-
-/* IMMAGINI */
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border: 5px solid white;
-    outline: 1px solid var(--bordo);
-}
-
-/* VIDEO */
-
-iframe {
-    display: block;
-    width: 100%;
-    max-width: 800px;
-    margin: 25px auto;
-    border: 4px solid white;
-}
-
-/* AUDIO */
-
-audio {
-    width: 100%;
-    margin: 15px 0;
-}
-
-/* LINK */
-
-a {
-    color: var(--bordeaux);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* PULSANTI */
-
-button {
-    background-color: var(--verde);
-    color: white;
-    border: none;
-    padding: 12px 22px;
-    font-family: Georgia, serif;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--seppia);
-}
-
-/* PIE' DI PAGINA */
-
-footer {
-    background-color: var(--seppia);
-    color: var(--carta);
-    text-align: center;
-    padding: 25px 15px;
-    margin-top: 50px;
-    font-size: 14px;
-}
-
-/* ADATTAMENTO SMARTPHONE */
-
-@media (max-width: 650px) {
-
-    body {
-        font-size: 16px;
-    }
-
-    header {
-        padding: 30px 15px;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    main {
-        margin: 15px;
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    iframe {
-        height: 240px;
-    }
-}
-/* =====================================
-   MENU DI NAVIGAZIONE
-   ===================================== */
+/* =====================================================
+   5. MENU DI NAVIGAZIONE
+   ===================================================== */
 
 nav {
     background-color: var(--verde);
@@ -220,38 +106,92 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
+/* Effetto al passaggio del mouse */
+
 nav ul li a:hover {
     background-color: var(--bordeaux);
     color: white;
 }
 
-/* VOCE ATTIVA DEL MENU */
+/* Evidenzia la pagina attualmente selezionata */
 
 nav ul li a.active {
     background-color: var(--seppia);
     color: white;
 }
 
-/* MENU SU SMARTPHONE */
 
-@media (max-width: 650px) {
+/* =====================================================
+   6. CONTENUTO PRINCIPALE
+   ===================================================== */
 
-    nav ul {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid rgba(255,255,255,0.15);
-    }
-
-    nav ul li a {
-        padding: 12px;
-    }
+main {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: var(--carta-chiara);
+    border: 1px solid var(--bordo);
+    box-shadow: 0 4px 15px rgba(60, 45, 30, 0.08);
 }
-/* MODELLI 3D SKETCHFAB */
+
+
+/* =====================================================
+   7. TITOLI E TESTI
+   ===================================================== */
+
+h2 {
+    color: var(--bordeaux);
+    font-size: 1.65rem;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--bordo);
+}
+
+h3 {
+    color: var(--verde);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+
+/* =====================================================
+   8. IMMAGINI
+   ===================================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid white;
+    outline: 1px solid var(--bordo);
+}
+
+
+/* =====================================================
+   9. VIDEO E CONTENUTI INCORPORATI
+   Regole generali per gli iframe
+   ===================================================== */
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 25px auto;
+    border: 4px solid white;
+}
+
+
+/* =====================================================
+   10. MODELLI TRIDIMENSIONALI - SKETCHFAB
+   ===================================================== */
 
 .modello-3d {
     margin-top: 35px;
@@ -267,11 +207,15 @@ nav ul li a.active {
     margin-bottom: 20px;
 }
 
+/* Contenitore del modello 3D */
+
 .sketchfab-container {
     width: 100%;
     max-width: 850px;
     margin: 25px auto;
 }
+
+/* Finestra interattiva Sketchfab */
 
 .sketchfab-container iframe {
     display: block;
@@ -281,6 +225,8 @@ nav ul li a.active {
     border-radius: 5px;
 }
 
+/* Attribuzione dell'autore del modello */
+
 .crediti-3d {
     font-size: 13px;
     color: var(--marrone);
@@ -288,4 +234,128 @@ nav ul li a.active {
 
 .crediti-3d a {
     color: var(--bordeaux);
+}
+
+
+/* =====================================================
+   11. AUDIO
+   ===================================================== */
+
+audio {
+    width: 100%;
+    margin: 15px 0;
+}
+
+
+/* =====================================================
+   12. LINK
+   ===================================================== */
+
+a {
+    color: var(--bordeaux);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   13. PULSANTI
+   ===================================================== */
+
+button {
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--seppia);
+}
+
+
+/* =====================================================
+   14. PIE' DI PAGINA
+   ===================================================== */
+
+footer {
+    background-color: var(--seppia);
+    color: var(--carta);
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   15. ADATTAMENTO PER SMARTPHONE E TABLET
+   Media query per schermi fino a 650 pixel
+   ===================================================== */
+
+@media (max-width: 650px) {
+
+    /* Testo generale */
+
+    body {
+        font-size: 16px;
+    }
+
+    /* Intestazione */
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Menu verticale */
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    nav ul li a {
+        padding: 12px;
+    }
+
+    /* Contenuto principale */
+
+    main {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    /* Titoli */
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Video incorporati */
+
+    iframe {
+        height: 240px;
+    }
+
+    /* Modello 3D */
+
+    .sketchfab-container iframe {
+        height: 300px;
+    }
 }
